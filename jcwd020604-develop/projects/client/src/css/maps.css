@@ -1,0 +1,43 @@
+.map-container {
+	width: 900px;
+	height: 600px;
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+/* Basic styles for the container */
+.hover-container {
+	display: inline-block; /* Adjust display as needed */
+	position: relative; /* Required for positioning the icon and text */
+}
+
+/* Styles for the icon */
+.hover-icon {
+	transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the icon */
+.hover-container:hover .hover-icon {
+	transform: scale(1.2); /* Increase the size on hover */
+	/* Add any other hover styles you'd like for the icon */
+}
+
+/* Styles for the text */
+.hover-text {
+	position: absolute;
+	top: 100%; /* Position the text below the icon */
+	left: 50%; /* Center the text horizontally */
+	transform: translateX(-50%); /* Adjust for centering */
+	font-size: 14px; /* Adjust the font size */
+	opacity: 0; /* Initially hide the text */
+	transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the text */
+.hover-container:hover .hover-text {
+	opacity: 1; /* Show the text on hover */
+	/* Add any other hover styles you'd like for the text */
+}
